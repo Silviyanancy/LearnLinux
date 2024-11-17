@@ -1,3 +1,4 @@
+#! /bin/bash
 # Variables - system, user-defined
 
 # 1. system - created and maintained by linux/unix os - uppercase

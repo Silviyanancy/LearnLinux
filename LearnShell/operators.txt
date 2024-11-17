@@ -1,0 +1,69 @@
+1. Arithmetic Operators
+Used for numeric calculations, typically with the expr command or $(( )).
+
+Operator	Description	        Example
++	        Addition	        expr 5 + 3 or $((5 + 3))
+-	        Subtraction	        expr 5 - 3 or $((5 - 3))
+*	        Multiplication	    expr 5 \* 3 or $((5 * 3))
+/	        Division	        expr 5 / 3 or $((5 / 3))
+%	        Modulus (remainder)	expr 5 % 3 or $((5 % 3))
+
+2. Relational (Comparison) Operators
+Used in conditional statements like if or while. Operates on numbers.
+
+Operator	    Description	                Example
+-eq	            Equal to	                [ $a -eq $b ]
+-ne	            Not equal to	            [ $a -ne $b ]
+-gt	            Greater than	            [ $a -gt $b ]
+-lt	            Less than	                [ $a -lt $b ]
+-ge	            Greater than or equal to	[ $a -ge $b ]
+-le	            Less than or equal to	    [ $a -le $b ]
+
+3. Boolean Operators
+Used for logical conditions in if statements or loops.
+
+Operator	    Description	    Example
+-a	            Logical AND	    [ $a -gt 10 -a $b -lt 20 ]
+-o	            Logical OR	    [ $a -gt 10 -o $b -lt 20 ]
+!	            Logical NOT	    [ ! $a -eq $b ]
+
+4. String Operators
+Used to test strings in conditions.
+
+Operator	    Description	        Example
+=	            Equal to	        [ "$str1" = "$str2" ]
+!=	            Not equal to	    [ "$str1" != "$str2" ]
+-z	            String is empty	    [ -z "$str1" ]
+-n	            String is not empty	[ -n "$str1" ]
+
+5. File Test Operators
+Used to test properties of files.
+
+Operator	    Description	        Example
+-e	            File exists	        [ -e file.txt ]
+-f	            Regular file exists	[ -f file.txt ]
+-d	            Directory exists	[ -d dir ]
+-r	            File is readable	[ -r file.txt ]
+-w	            File is writable	[ -w file.txt ]
+-x	            File is executable	[ -x script.sh ]
+-s	            File is not empty	[ -s file.txt ]
+
+6. Bitwise Operators
+Used for bit-level operations (rarely used in shell scripting).
+
+Operator	    Description	    Example
+&	            Bitwise AND	    $((a & b))
+`		        Bitwise OR      $((a ` b))
+^	            Bitwise XOR	    $((a ^ b))
+<<	            Left shift	    $((a << 2))
+>>	            Right shift	    $((a >> 2))
+
+7. Assignment Operators
+Used to assign values.
+
+Operator	    Description	            Example
+=	            Assign value	        a=10
++=	            Add and assign	        a+=5
+-=	            Subtract and assign	    a-=3
+*=	            Multiply and assign	    a*=2
+/=	            Divide and assign	    a/=4
