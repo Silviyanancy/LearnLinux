@@ -1,0 +1,20 @@
+Why Shell in DevOps?
+
+1. Infrastruture
+2. Coding
+3. Configuration Management
+
+To read the output in a better way, we can use
+
+./filename | more
+
+To run a shell script in debug mode, you can use the -x option with the shell interpreter. This mode prints each command and its arguments as they are executed, making it easier to debug the script.
+
+Example
+
+#!/bin/bash
+echo "This will not be debugged"
+set -x
+echo "This will be debugged"
+set +x
+echo "Debugging turned off"
