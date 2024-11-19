@@ -18,3 +18,10 @@ set -x
 echo "This will be debugged"
 set +x
 echo "Debugging turned off"
+
+4. GitHub Integration 
+If you want to revoke access of anyone from the repo, wrte script
+Before executing the script export, username, API token of github
+
+Execute
+./GitHubInteg.sh organization_name/repor_owner repo_name
